@@ -47988,8 +47988,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "mv-stars" }, [
     _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v(_vm._s(_vm.title))]),
-      _vm._v(" "),
       _c("div", { staticClass: "flex-center position-ref full-height" }, [
         _c(
           "ul",

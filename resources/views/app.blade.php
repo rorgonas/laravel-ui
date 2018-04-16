@@ -5,6 +5,7 @@
 </head>
 <body>
     <div id='vm-app'>
+        @include('includes.main-header')
         @yield('content')
     </div>
 
