@@ -1,0 +1,30 @@
+//@import '../../../../styles/mv-variables';
+//@import '../../../../styles/utils/mixins';
+//@import '../button/button.component.scss';
+
+.mv-link {
+  display: inline-block;
+  cursor: pointer;
+
+  //a {
+  //  color: var(--color);
+  //  font: var(--font);
+  //  text-decoration: none;
+  //
+  //  &:hover {
+  //    & {
+  //      --color: var(--color-brand);
+  //      @include headings {
+  //        color: var(--color-brand);
+  //      }
+  //    }
+  //  }
+  //  &.text-hot-pink {
+  //    --mv-link-color: var(--color-accent);
+  //  }
+  //}
+  //
+  //a.accent {
+  //  --color: var(--color-accent);
+  //}
+}

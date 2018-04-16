@@ -4,6 +4,10 @@
     @include('includes.head')
 </head>
 <body>
-    @yield('content')
+    <div id='vm-app'>
+        @yield('content')
+    </div>
+
+    <script src='/js/app.js'></script>
 </body>
 </html>

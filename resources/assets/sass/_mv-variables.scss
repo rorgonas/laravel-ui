@@ -1,0 +1,226 @@
+@import "~bootstrap/scss/variables";
+
+/*
+Overrides Bootstrap's variables and define new ones here
+*/
+
+//$grid-breakpoints: (
+//  xs: var(--bp-xs),
+//  sm: var(--bp-sm),
+//  md: var(--bp-md),
+//  lg: var(--bp-lg),
+//  xl: var(--bp-xl)
+//);
+
+$enable-flex: true;
+
+$border-radius:          6px;
+$border-radius-lg:       $border-radius;
+$border-radius-sm:       $border-radius;
+$btn-border-radius:      $border-radius;
+$btn-border-radius-lg:   $border-radius;
+$btn-border-radius-sm:   $border-radius;
+$input-border-radius:    $border-radius;
+$input-border-radius-lg: $border-radius;
+$input-border-radius-sm: $border-radius;
+
+$font-family-base: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Prompt', sans-serif;
+
+$font-size-root: 14px; //1rem
+
+$font-size-h1: 2rem; //28px
+$font-size-h2: 1.5rem; //21px
+$font-size-h3: 1.1428571428571428rem; //16px
+$font-size-h4: 1rem; //14px
+$font-size-h5: 0.8571428571428571rem; //12px
+$font-size-h6: 0.7142857142857143rem; //10px
+
+$line-height: 1.5;
+
+//colors
+$gray: #55595c;
+$gray-dark: #373a3c;
+$gray-light: #a3a3a3;
+$gray-lighter: #fafafa;
+$gray-lightest: #f7f7f9;
+$black: #000000;
+$white: #ffffff;
+$blue: #2196F3;
+
+$headings-color: $black;
+$nav-color: $gray-dark;
+$primary-text-color: #373A3C;
+$disabled-text-color: #BBBBBB;
+$divider-color: #DBDBDB;
+$border-color: #e0e0e0;
+$accent-color: #ea427c;
+$text-highlight: #f8fbbf;
+
+$brand-primary: $blue;
+$brand-primary-light: #e3f2fd;
+$brand-primary-dark: #1565c0;
+
+$brand-highlight: #ff4081;
+$brand-highlight-light: #ffa0c0;
+$brand-highlight-lighter: #fce4ec;
+$brand-highlight-dark: #C2185B;
+
+$brand-secondary: #4690CF;
+
+$brand-success: #8cc34b;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #f54337;
+$brand-error: #ff2411;
+
+//chat components
+$brand-tip: #A743FF;
+
+$body-bg: $white;
+$body-color: $primary-text-color;
+
+//spacing
+$spacer: 0.5rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+        0: (
+                x: 0,
+                y: 0
+        ),
+        1: (
+                x: $spacer-x,
+                y: $spacer-y
+        ),
+        2: (
+                x: ($spacer-x * 2),
+                y: ($spacer-y * 2)
+        ),
+        3: (
+                x: ($spacer-x * 3),
+                y: ($spacer-y * 3)
+        ),
+        4: (
+                x: ($spacer-x * 4),
+                y: ($spacer-y * 4)
+        ),
+        5: (
+                x: ($spacer-x * 5),
+                y: ($spacer-y * 5)
+        )
+);
+$grid-gutter-width: 1rem;
+
+//Buttons
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
+$btn-transition:                 none;
+$btn-danger-bg:                  $brand-highlight;
+$btn-danger-border:              $brand-highlight;
+$btn-secondary-border:           $gray-light;
+
+// Cards
+$card-spacer-x: .5rem;
+$card-spacer-y: .5rem;
+$card-border-color: $border-color;
+$card-border-radius: $border-radius;
+
+//form
+//error
+$error-message-bg: $brand-danger;
+$error-message-color: $white;
+$error-message-arrow-width: 6px;
+$error-message-arrow-color: $error-message-bg;
+
+//custom forms
+$custom-control-indicator-size: 1.5rem;
+$custom-checkbox-radius: $border-radius;
+$custom-checkbox-indeterminate-bg: $brand-highlight;
+$custom-control-focus-indicator-box-shadow: 0 0 0 1px $body-bg, 0 0 0 3px $white;
+$custom-control-gutter: 2rem;
+$custom-checkbox-checked-icon: url("https://d3e1078hs60k37.cloudfront.net/site_files/images/icons/checkmark.svg");
+$custom-control-checked-indicator-bg: $brand-highlight;
+$custom-control-indicator-bg-size: 65% 65%;
+$custom-control-indicator-bg: $white;
+
+// Tables
+$table-bg-accent: $white;
+$table-border-color: $border-color;
+$table-bg-hover: $body-bg;
+
+// Header
+$header-height: 54px;
+$top-header-height: 54px; //promo-banner, w9 banner
+$sub-header-height: 42px;
+$room-topic-height: 63px;
+
+//Footer
+$main-footer-height: 40px;
+
+$link-hover-color: $brand-primary;
+$link-hover-decoration: none;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+);
+
+//Tooltips
+$tooltip-bg: #666;
+$status-bar-min-height: 42px;
+
+// Modals
+$modal-lg:                    700px;
+$modal-md:                    550px;
+$modal-sm:                    400px;
+
+// Popover
+$popover-content-padding-x: 1rem;
+$popover-content-padding-y: 1rem;
+
+// Dropdown
+$dropdown-link-color: $primary-text-color;
+
+// Padding applied to the modal body
+$modal-inner-padding:         $spacer*2;
+$modal-content-border-color:  $border-color;
+$modal-header-padding:        $spacer*2;
+
+// Alerts
+$alert-padding-x: 1rem;
+$alert-padding-y: .5rem;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-x: 1.25rem !default;
+$alert-padding-y: .75rem !default;
+$alert-margin-bottom: $spacer-y !default;
+$alert-border-radius: $border-radius !default;
+$alert-link-font-weight: $font-weight-bold !default;
+$alert-border-width: $border-width !default;
+
+$alert-success-bg: $state-success-bg !default;
+$alert-success-text: $state-success-text !default;
+$alert-success-border: $state-success-border !default;
+
+$alert-info-bg: $state-info-bg !default;
+$alert-info-text: $state-info-text !default;
+$alert-info-border: $state-info-border !default;
+
+$alert-warning-bg: $state-warning-bg !default;
+$alert-warning-text: $state-warning-text !default;
+$alert-warning-border: $state-warning-border !default;
+
+$alert-danger-bg: $brand-highlight-lighter;
+$alert-danger-text: $black;
+$alert-danger-border: transparent;
+
+// Navbar
+$navbar-light-color:            $primary-text-color;
+$navbar-light-hover-color:      $brand-primary;
