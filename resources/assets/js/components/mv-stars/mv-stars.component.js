@@ -1,4 +1,4 @@
-Vue.component('mv-avatar', require('../../components/mv-avatar/index.vue'));
+Vue.component('mv-avatar', require('../mv-avatar/index.vue'));
 
 export default {
   name: 'mv-stars',
