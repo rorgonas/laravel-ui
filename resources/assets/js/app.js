@@ -15,7 +15,6 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('mv-stars', require('./components/mv-stars/index.vue'));
 
 const app = new Vue({
