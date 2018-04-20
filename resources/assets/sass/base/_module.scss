@@ -3,9 +3,14 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
+@import "header";
+@import "footer";
 
 // Body
 $body-bg: #f5f8fa;
+body {
+  font-size: $font-size-base;
+}
 
 // Typography
 $font-family-sans-serif: "Raleway", sans-serif;

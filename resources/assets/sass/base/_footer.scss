@@ -1,0 +1,26 @@
+// Footer
+footer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #636b6f;
+
+  & nav {
+    flex-direction: row;
+    display:flex;
+    padding: 0 1rem;
+
+    & a {
+      color: $navbar-light-color;
+      font-family: $headings-font-family;
+      font-size: 1.2rem;
+      font-weight: 500;
+      &:hover {
+        color: $navbar-light-hover-color;
+      }
+    }
+  }
+}
