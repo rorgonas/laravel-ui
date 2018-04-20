@@ -10052,3 +10052,136 @@ body {
   margin-bottom: 30px;
 }
 
+/*===== CONFIG =====*/
+
+/*===== END CONFIG =====*/
+
+/* The following lets us use a % height on the tiles. */
+
+html,
+body {
+  background: #45484d;
+  background: radial-gradient(ellipse at center, #45484d 0%, #333333 100%);
+  height: 100%;
+}
+
+.container {
+  height: 800px;
+  overflow: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /*
+      Stop the tiles from "moving behind" the
+      clickable plane  (for lack of a better term)
+      See here: https://bit.ly/Rd3DBj
+  */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  width: 100%;
+  /* Make the tiles half opaque until hovered */
+}
+
+.container:hover .tile:not(:hover) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.tile {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  height: 30%;
+  position: absolute;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 18%;
+}
+
+.tile.radius {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tile:nth-of-type(5n+1) {
+  left: 1.66666667%;
+}
+
+.container:hover .tile:nth-of-type(5n+1) {
+  font-size: 30;
+  letter-spacing: 5;
+  -webkit-transform: rotateY(30deg) translateZ(-30px);
+          transform: rotateY(30deg) translateZ(-30px);
+}
+
+.tile:nth-of-type(5n+2) {
+  left: 21.33333333%;
+}
+
+.container:hover .tile:nth-of-type(5n+2) {
+  font-size: 30;
+  letter-spacing: 5;
+  -webkit-transform: rotateY(15deg) translateZ(-60px);
+          transform: rotateY(15deg) translateZ(-60px);
+}
+
+.tile:nth-of-type(5n+3) {
+  left: 41%;
+}
+
+.container:hover .tile:nth-of-type(5n+3) {
+  font-size: 30;
+  letter-spacing: 5;
+  -webkit-transform: rotateY(0deg) translateZ(-90px);
+          transform: rotateY(0deg) translateZ(-90px);
+}
+
+.tile:nth-of-type(5n+4) {
+  left: 60.66666667%;
+}
+
+.container:hover .tile:nth-of-type(5n+4) {
+  font-size: 30;
+  letter-spacing: 5;
+  -webkit-transform: rotateY(-15deg) translateZ(-60px);
+          transform: rotateY(-15deg) translateZ(-60px);
+}
+
+.tile:nth-of-type(5n+5) {
+  left: 80.33333333%;
+}
+
+.container:hover .tile:nth-of-type(5n+5) {
+  font-size: 30;
+  letter-spacing: 5;
+  -webkit-transform: rotateY(-30deg) translateZ(-30px);
+          transform: rotateY(-30deg) translateZ(-30px);
+}
+
+.tile:nth-of-type(1n+1) {
+  top: 2.5%;
+}
+
+.tile:nth-of-type(1n+6) {
+  top: 35%;
+}
+
+.tile:nth-of-type(1n+11) {
+  top: 67.5%;
+}
+
+.container:hover .tile:active,
+.container:hover .tile.active {
+  height: 95%;
+  left: 1.66666667%;
+  top: 2.5%;
+  -webkit-transform: rotateY(0) translateZ(0);
+          transform: rotateY(0) translateZ(0);
+  width: 96.66666667%;
+  z-index: 3;
+}
+

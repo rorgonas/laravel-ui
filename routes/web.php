@@ -11,6 +11,16 @@
 |
 */
 
+// Main routing
 Route::get('/', 'MainController@show');
+Route::get('/templates', 'TemplatesController@show');
+Route::get('/design-guide', 'DesignGuideController@show');
 
-Route::get('/MVGirls', 'MVGirlsController@show');
+// Sample Templates
+Route::get('/home', 'HomePageController@show');
+Route::get('/about', 'AboutPageController@show');
+Route::get('/contact', 'ContactPageController@show');
+Route::get('/mv-stars', 'StarsPageController@show');
+
+// Sample 3D Gallery
+Route::get('/gallery', 'GalleryPageController@show');

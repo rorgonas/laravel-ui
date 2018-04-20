@@ -24,7 +24,7 @@
                     <a href="https://vuejs.org/" target="_blank" title="VueJS Framework ">VueJS</a>
                     <a href="https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization" target="_blank" title="Aesthetic Sass">Sass</a>
                     <a href="https://projects.invisionapp.com/d/main#/projects/prototypes/11566151" target="_blank" title="MV Prototypes">MV Prototypes</a>
-                    <a href="{{ url('/MVGirls') }}" title="MV Girls">MV Girls</a>
+                    <a href="{{ url('/home') }}" title="Sample Templates">Sample Templates</a>
                 </div>
             </div>
         </div>

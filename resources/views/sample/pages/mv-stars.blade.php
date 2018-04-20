@@ -1,6 +1,6 @@
-@extends('app')
+@extends('sample')
 
 @section('content')
-@include('includes.breadcrumb')
+    <h2>{{$title}}</h2>
     <mv-stars :persons='{!! json_encode($persons) !!}'></mv-stars>
 @endsection

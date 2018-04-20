@@ -1,3 +1,14 @@
 .mv-stars {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+  }
 
+  label {
+    margin-top: .5rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }

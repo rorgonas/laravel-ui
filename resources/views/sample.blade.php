@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    @include('base.includes.head')
+    @include('sample.includes.head')
 </head>
 <body>
     <div id='vm-app'>
-        @include('base.includes.header')
+        @include('sample.includes.header')
         @yield('content')
+        @include('sample.includes.footer')
     </div>
 
     <script src='/js/app.js'></script>

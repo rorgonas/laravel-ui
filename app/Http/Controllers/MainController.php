@@ -10,7 +10,7 @@ class MainController extends Controller
     * Display Main Page
     */
     public function show(){
-        $title = 'UI Laravel';
-        return view('pages/main', ['title' => $title]);
+        $title = 'UI Core';
+        return view('base/pages/main', ['title' => $title]);
     }
 }
